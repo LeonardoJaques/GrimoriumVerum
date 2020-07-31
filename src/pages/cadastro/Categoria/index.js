@@ -25,7 +25,7 @@ function CadastroCategoria() {
     );
   }
   useEffect(() => {
-    const URL = 'http://localhost:3002/categorias';
+    const URL = 'https://grimoriumverum.herokuapp.com/categorias';
     fetch(URL)
       .then(async (serverResponse) => {
         const response = await serverResponse.json();
