@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Menu from '../../components/Menu';
 import dadosIniciais from '../../data/dados_iniciais.json';
 import BannerMain from '../../components/BannerMain';
@@ -6,6 +6,22 @@ import Carousel from '../../components/Carrousel';
 import Footer from '../../components/Footer';
 
 function Home() {
+  useEffect(() => {
+    // categoriasRepository.getAllWithVideos();
+
+    // const URL_BACK = window.location.href.includes('localhost')
+    //   ? 'http://localhost:3001/categorias'
+    //   : 'https://grimoriumverum.herokuapp.com/categorias';
+    // fetch(URL_BACK)
+    //   .then(async (serverResponse) => {
+    // const response = await serverResponse.json();
+    // setCategoria([
+    //   ...response,
+    // ]);
+    // });
+  }, []);
+  // http://localhost:3001/categorias?_embed=videos
+
   return (
     <div style={{ background: '#141414' }}>
       <Menu />
@@ -32,5 +48,4 @@ function Home() {
     </div>
   );
 }
-
 export default Home;
