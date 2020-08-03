@@ -4,13 +4,104 @@
             "id": 1,
             "name": "Front End",
             "description": "Paga os Boletos",
-            "color": "cbd1ff"
+            "color": "cbd1ff",
+            "link_extra": {
+                "text": "Formação de Front End na Alura",
+                "url": "https://www.alura.com.br/cursos-online-front-end"
+            }
         },
         {
             "id": 2,
             "name": "Back End",
             "description": "Paga mais boletos",
-            "color": "cbd1ff"
+            "color": "cbd1ff",
+            "link_extra": {
+                "text": "Formação de Front End na Alura",
+                "url": "https://www.alura.com.br/cursos-online-front-end"
+            }
+        },
+        {
+            "id": 3,
+            "name": "Data Science e Inteligência Artificial",
+            "description": "Paga mais boletos",
+            "cor": "#9cd33b",
+            "link_extra": {
+                "text": "Cursos de Data Science na Alura",
+                "url": "https://www.alura.com.br/formacao-data-science"
+            }
+        },
+        {
+            "id": 4,
+            "name": "Data Science e Inteligência",
+            "cor": "#9cd33b",
+            "link_extra": {
+                "text": "Cursos de Data Science na Alura",
+                "url": "https://www.alura.com.br/formacao-data-science"
+            }
+        },
+        {
+            "id": 5,
+            "name": "Filmes",
+            "cor": "orange"
+        },
+        {
+            "id": 6,
+            "name": "Games",
+            "cor": "red",
+            "link_extra": {
+                "text": "Formação de Jogos na Alura",
+                "url": "https://www.alura.com.br/formacao-jogos-unity"
+            }
+        }
+    ],
+    "videos": [
+        {
+            "id": 1,
+            "categoriaId": 1,
+            "titulo": "O que faz uma desenvolvedora front-end? #HipstersPontoTube",
+            "url": "https://www.youtube.com/watch?v=ZY3-MFxVdEw"
+        },
+        {
+            "id": 2,
+            "categoriaId": 2,
+            "titulo": "SEO com React",
+            "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
+        },
+        {
+            "id": 3,
+            "categoriaId": 3,
+            "titulo": "Componentização com VanillaJS #AluraMais",
+            "url": "https://www.youtube.com/watch?v=LatCKpcOMak"
+        },
+        {
+            "id": 4,
+            "categoriaId": 4,
+            "titulo": "Pare de chutar e aprenda a display: inline #01",
+            "url": "https://www.youtube.com/watch?v=5PS6ku8NzIE"
+        },
+        {
+            "id": 5,
+            "categoriaId": 5,
+            "titulo": "Template String: Interpolando strings com JavaScript #AluraMais",
+            "url": "https://www.youtube.com/watch?v=ORI_HTXaIw0"
+        },
+        {
+            "id": 6,
+            "categoriaId": 6,
+            "titulo": "Qual é a melhor linguagem de programação? #HipstersPontoTube",
+            "url": "https://www.youtube.com/watch?v=Uh-GNH-t89w"
+        },
+        {
+            "id": 7,
+            "categoriaId": 7,
+            "titulo": "Novidades do Angular v9",
+            "url": "https://www.youtube.com/watch?v=34uHo7hFmG0"
+        },
+        {
+            "id": 8,
+            "categoriaId": 8,
+            "titulo": "Base para aprender os frameworks",
+            "url": "https://www.youtube.com/watch?v=QzDjdlF1BQI"
         }
     ]
 }

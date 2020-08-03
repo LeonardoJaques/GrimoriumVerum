@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
+import useForm from '../../../hooks/useForm';
 
 function CadastroCategoria() {
   const [categorias, setCategoria] = useState([]);
@@ -11,22 +12,13 @@ function CadastroCategoria() {
     description: '',
     color: '',
   };
-  const [values, setValues] = useState(initialValues);
-  function setValue(key, value) {
-    setValues({
-      ...values,
-      [key]: value,
-    });
-  }
-  function handleChange(infosDoEvento) {
-    setValue(
-      infosDoEvento.target.getAttribute('name'),
-      infosDoEvento.target.value,
-    );
-  }
+
+  const { handleChange, values, clearForm } = useForm(initialValues);
   useEffect(() => {
-    const URL = 'https://grimoriumverum.herokuapp.com/categorias';
-    fetch(URL)
+    const URL_BACK = window.location.href.includes('localhost')
+      ? 'http://localhost:3001/categorias'
+      : 'https://grimoriumverum.herokuapp.com/categorias';
+    fetch(URL_BACK)
       .then(async (serverResponse) => {
         const response = await serverResponse.json();
         setCategoria([
@@ -47,7 +39,7 @@ function CadastroCategoria() {
         onSubmit={function HandleSubmit(infosDoEvento) {
           infosDoEvento.preventDefault();
           setCategoria([...categorias, values]);
-          setValues(initialValues);
+          clearForm(initialValues);
         }}
       >
         <FormField
