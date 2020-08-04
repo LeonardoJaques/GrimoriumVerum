@@ -8,6 +8,15 @@
                 "text": "Formação de Front End na Alura",
                 "url": "https://www.alura.com.br/cursos-online-front-end"
             }
+        },
+        {
+            "id": 2,
+            "title": "Mobile",
+            "color": "#FDBA05",
+            "link_extra": {
+                "text": "Formação de mobile na Alura",
+                "url": "https://www.alura.com.br/cursos-online-mobile"
+            }
         }
     ],
     "videos": [
@@ -16,6 +25,12 @@
             "categoriaId": 1,
             "title": "SEO com React",
             "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
+        },
+        {
+            "id": 2,
+            "categoriaId": 2,
+            "title": "Como fazer validações de formulário com React?",
+            "url": "https://www.youtube.com/watch?v=-nYNd6EuZHU&feature"
         }
     ]
 }

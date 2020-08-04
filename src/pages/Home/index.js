@@ -11,6 +11,9 @@ function Home() {
     categoriasRepository.getAllWithVideos()
       .then((categoriasComVideos) => {
         console.log(categoriasComVideos);
+      })
+      .catch((err) => {
+        console.log(err.message);
       });
   }, []);
   // http://localhost:3001/categorias?_embed=videos

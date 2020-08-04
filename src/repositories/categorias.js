@@ -1,13 +1,15 @@
 import config from '../config';
 
-const URL_CATEGORIES = `${config.URL_BACKEND}/categorias?_embed=videos
-`;
+const URL_CATEGORIES = `${config.URL_BACKEND}/categorias`;
 
 function getAllWithVideos() {
-  return fetch(URL_CATEGORIES)
+  return fetch(`${URL_CATEGORIES}?_embed=videos`)
     .then(async (serverResponse) => {
-      const response = await serverResponse.json();
-      return response;
+      if (serverResponse.ok) {
+        const response = await serverResponse.json();
+        return response;
+      }
+      throw new Error(`Is not possible get the data ${serverResponse}`);
     });
 }
 
