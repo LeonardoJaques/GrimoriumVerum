@@ -40,7 +40,7 @@ function Home() {
         }
         return (
           <Carousel
-            ket={categoria.id}
+            key={categoria.id}
             category={categoria}
           />
         );
