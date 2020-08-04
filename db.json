@@ -1,132 +1,138 @@
 {
-    "categorias": [
-        {
-            "id": 1,
-            "title": "Front End",
-            "color": "#6BD1FF",
-            "link_extra": {
-                "text": "Formação de Front End na Alura",
-                "url": "https://www.alura.com.br/cursos-online-front-end"
-            }
-        },
-        {
-            "id": 2,
-            "title": "Mobile",
-            "color": "#FDBA05",
-            "link_extra": {
-                "text": "Formação de mobile na Alura",
-                "url": "https://www.alura.com.br/cursos-online-mobile"
-            }
-        }
-    ],
-    "videos": [
-        {
-            "id": 1,
-            "categoriaId": 1,
-            "title": "SEO com React",
-            "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
-        },
-        {
-            "id": 2,
-            "categoriaId": 1,
-            "title": "O que faz uma desenvolvedora front-end? #HipstersPontoTube",
-            "url": "https://www.youtube.com/watch?v=ZY3-MFxVdEw"
-        },
-        {
-            "id": 3,
-            "categoriaId": 1,
-            "title": "SEO com React",
-            "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
-        },
-        {
-            "id": 4,
-            "categoriaId": 1,
-            "title": "Componentização com VanillaJS #AluraMais",
-            "url": "https://www.youtube.com/watch?v=LatCKpcOMak"
-        },
-        {
-            "id": 5,
-            "categoriaId": 1,
-            "title": "Pare de chutar e aprenda a display: inline #01",
-            "url": "https://www.youtube.com/watch?v=5PS6ku8NzIE"
-        },
-        {
-            "id": 6,
-            "categoriaId": 1,
-            "title": "Template String: Interpolando strings com JavaScript #AluraMais",
-            "url": "https://www.youtube.com/watch?v=ORI_HTXaIw0"
-        },
-        {
-            "id": 7,
-            "categoriaId": 1,
-            "title": "Qual é a melhor linguagem de programação? #HipstersPontoTube",
-            "url": "https://www.youtube.com/watch?v=Uh-GNH-t89w"
-        },
-        {
-            "id": 8,
-            "categoriaId": 1,
-            "title": "Novidades do Angular v9",
-            "url": "https://www.youtube.com/watch?v=34uHo7hFmG0"
-        },
-        {
-            "id": 9,
-            "categoriaId": 1,
-            "title": "Base para aprender os frameworks",
-            "url": "https://www.youtube.com/watch?v=QzDjdlF1BQI"
-        },
-        {
-            "id": 10,
-            "categoriaId": 2,
-            "title": "SEO com React",
-            "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
-        },
-        {
-            "id": 11,
-            "categoriaId": 2,
-            "title": "O que faz uma desenvolvedora front-end? #HipstersPontoTube",
-            "url": "https://www.youtube.com/watch?v=ZY3-MFxVdEw"
-        },
-        {
-            "id": 12,
-            "categoriaId": 2,
-            "title": "SEO com React",
-            "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
-        },
-        {
-            "id": 13,
-            "categoriaId": 2,
-            "title": "Componentização com VanillaJS #AluraMais",
-            "url": "https://www.youtube.com/watch?v=LatCKpcOMak"
-        },
-        {
-            "id": 14,
-            "categoriaId": 2,
-            "title": "Pare de chutar e aprenda a display: inline #01",
-            "url": "https://www.youtube.com/watch?v=5PS6ku8NzIE"
-        },
-        {
-            "id": 15,
-            "categoriaId": 2,
-            "title": "Template String: Interpolando strings com JavaScript #AluraMais",
-            "url": "https://www.youtube.com/watch?v=ORI_HTXaIw0"
-        },
-        {
-            "id": 16,
-            "categoriaId": 2,
-            "title": "Qual é a melhor linguagem de programação? #HipstersPontoTube",
-            "url": "https://www.youtube.com/watch?v=Uh-GNH-t89w"
-        },
-        {
-            "id": 17,
-            "categoriaId": 2,
-            "title": "Novidades do Angular v9",
-            "url": "https://www.youtube.com/watch?v=34uHo7hFmG0"
-        },
-        {
-            "id": 18,
-            "categoriaId": 2,
-            "title": "Base para aprender os frameworks",
-            "url": "https://www.youtube.com/watch?v=QzDjdlF1BQI"
-        }
-    ]
+  "categorias": [
+    {
+      "id": 1,
+      "title": "Front End",
+      "color": "#6BD1FF",
+      "link_extra": {
+        "text": "Formação de Front End na Alura",
+        "url": "https://www.alura.com.br/cursos-online-front-end"
+      }
+    },
+    {
+      "id": 2,
+      "title": "Mobile",
+      "color": "#FDBA05",
+      "link_extra": {
+        "text": "Formação de mobile na Alura",
+        "url": "https://www.alura.com.br/cursos-online-mobile"
+      }
+    }
+  ],
+  "videos": [
+    {
+      "id": 1,
+      "categoriaId": 1,
+      "title": "SEO com React",
+      "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
+    },
+    {
+      "id": 2,
+      "categoriaId": 1,
+      "title": "O que faz uma desenvolvedora front-end? #HipstersPontoTube",
+      "url": "https://www.youtube.com/watch?v=ZY3-MFxVdEw"
+    },
+    {
+      "id": 3,
+      "categoriaId": 1,
+      "title": "SEO com React",
+      "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
+    },
+    {
+      "id": 4,
+      "categoriaId": 1,
+      "title": "Componentização com VanillaJS #AluraMais",
+      "url": "https://www.youtube.com/watch?v=LatCKpcOMak"
+    },
+    {
+      "id": 5,
+      "categoriaId": 1,
+      "title": "Pare de chutar e aprenda a display: inline #01",
+      "url": "https://www.youtube.com/watch?v=5PS6ku8NzIE"
+    },
+    {
+      "id": 6,
+      "categoriaId": 1,
+      "title": "Template String: Interpolando strings com JavaScript #AluraMais",
+      "url": "https://www.youtube.com/watch?v=ORI_HTXaIw0"
+    },
+    {
+      "id": 7,
+      "categoriaId": 1,
+      "title": "Qual é a melhor linguagem de programação? #HipstersPontoTube",
+      "url": "https://www.youtube.com/watch?v=Uh-GNH-t89w"
+    },
+    {
+      "id": 8,
+      "categoriaId": 1,
+      "title": "Novidades do Angular v9",
+      "url": "https://www.youtube.com/watch?v=34uHo7hFmG0"
+    },
+    {
+      "id": 9,
+      "categoriaId": 1,
+      "title": "Base para aprender os frameworks",
+      "url": "https://www.youtube.com/watch?v=QzDjdlF1BQI"
+    },
+    {
+      "id": 10,
+      "categoriaId": 2,
+      "title": "SEO com React",
+      "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
+    },
+    {
+      "id": 11,
+      "categoriaId": 2,
+      "title": "O que faz uma desenvolvedora front-end? #HipstersPontoTube",
+      "url": "https://www.youtube.com/watch?v=ZY3-MFxVdEw"
+    },
+    {
+      "id": 12,
+      "categoriaId": 2,
+      "title": "SEO com React",
+      "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
+    },
+    {
+      "id": 13,
+      "categoriaId": 2,
+      "title": "Componentização com VanillaJS #AluraMais",
+      "url": "https://www.youtube.com/watch?v=LatCKpcOMak"
+    },
+    {
+      "id": 14,
+      "categoriaId": 2,
+      "title": "Pare de chutar e aprenda a display: inline #01",
+      "url": "https://www.youtube.com/watch?v=5PS6ku8NzIE"
+    },
+    {
+      "id": 15,
+      "categoriaId": 2,
+      "title": "Template String: Interpolando strings com JavaScript #AluraMais",
+      "url": "https://www.youtube.com/watch?v=ORI_HTXaIw0"
+    },
+    {
+      "id": 16,
+      "categoriaId": 2,
+      "title": "Qual é a melhor linguagem de programação? #HipstersPontoTube",
+      "url": "https://www.youtube.com/watch?v=Uh-GNH-t89w"
+    },
+    {
+      "id": 17,
+      "categoriaId": 2,
+      "title": "Novidades do Angular v9",
+      "url": "https://www.youtube.com/watch?v=34uHo7hFmG0"
+    },
+    {
+      "id": 18,
+      "categoriaId": 2,
+      "title": "Base para aprender os frameworks",
+      "url": "https://www.youtube.com/watch?v=QzDjdlF1BQI"
+    },
+    {
+      "title": "Como fazer validações de formulário com React? #FailFastValidations | Formik Engenharia Reversa #02 ",
+      "url": "https://www.youtube.com/watch?v=-nYNd6EuZHU&feature",
+      "categoriaId": 1,
+      "id": 19
+    }
+  ]
 }
