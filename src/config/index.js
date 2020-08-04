@@ -5,9 +5,3 @@ const URL_BACKEND = window.location.hostname.includes('localhost')
 export default {
   URL_BACKEND,
 };
-
-// const URL_BACKEND = window.location.href.includes('localhost')
-//   ? 'http://localhost:3001'
-//   : 'https://grimoriumverum.herokuapp.com';
-
-// export default { URL_BACKEND, };

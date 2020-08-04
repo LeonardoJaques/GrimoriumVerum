@@ -4,21 +4,14 @@ import dadosIniciais from '../../data/dados_iniciais.json';
 import BannerMain from '../../components/BannerMain';
 import Carousel from '../../components/Carrousel';
 import Footer from '../../components/Footer';
+import categoriasRepository from '../../repositories/categorias';
 
 function Home() {
   useEffect(() => {
-    // categoriasRepository.getAllWithVideos();
-
-    // const URL_BACK = window.location.href.includes('localhost')
-    //   ? 'http://localhost:3001/categorias'
-    //   : 'https://grimoriumverum.herokuapp.com/categorias';
-    // fetch(URL_BACK)
-    //   .then(async (serverResponse) => {
-    // const response = await serverResponse.json();
-    // setCategoria([
-    //   ...response,
-    // ]);
-    // });
+    categoriasRepository.getAllWithVideos()
+      .then((categoriasComVideos) => {
+        console.log(categoriasComVideos);
+      });
   }, []);
   // http://localhost:3001/categorias?_embed=videos
 

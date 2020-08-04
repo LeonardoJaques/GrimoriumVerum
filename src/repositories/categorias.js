@@ -1,8 +1,14 @@
-import { URL_BACKEND } from '../config';
+import config from '../config';
+
+const URL_CATEGORIES = `${config.URL_BACKEND}/categorias?_embed=videos
+`;
 
 function getAllWithVideos() {
-  console.log(URL_BACKEND);
-  return URL_BACKEND;
+  return fetch(URL_CATEGORIES)
+    .then(async (serverResponse) => {
+      const response = await serverResponse.json();
+      return response;
+    });
 }
 
 export default {
