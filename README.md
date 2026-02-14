@@ -1,68 +1,100 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 📖 GrimoriumVerum
 
-## Available Scripts
+Plataforma de vídeos organizada por categorias, inspirada na Netflix. Permite cadastrar categorias e vídeos, exibindo-os em um layout moderno com banner principal e carrosseis por categoria.
 
-In the project directory, you can run:
+## 🚀 Tech Stack
 
-### `npm start`
+| Camada     | Tecnologia                                     |
+| ---------- | ---------------------------------------------- |
+| Framework  | [React 19](https://react.dev/)                 |
+| Linguagem  | [TypeScript 5.7](https://www.typescriptlang.org/) |
+| Build Tool | [Vite 6](https://vite.dev/)                    |
+| Roteamento | [React Router v7](https://reactrouter.com/)    |
+| Estilização | CSS Modules                                   |
+| Backend    | [JSON Server](https://github.com/typicode/json-server) |
+| Linting    | ESLint 9                                       |
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 📁 Estrutura do Projeto
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+```
+src/
+├── components/
+│   ├── BannerMain/          # Banner principal com vídeo em destaque
+│   ├── Button/              # Botão reutilizável
+│   ├── Carousel/            # Carrossel de vídeos por categoria
+│   │   └── components/
+│   │       ├── Slider/      # Controle de slides
+│   │       └── VideoCard/   # Card individual de vídeo
+│   ├── Footer/              # Rodapé da aplicação
+│   ├── FormField/           # Campo de formulário reutilizável
+│   ├── Menu/                # Menu de navegação superior
+│   └── PageDefault/         # Layout padrão das páginas
+├── config/                  # Configuração (URL do backend, etc.)
+├── hooks/
+│   └── useForm.ts           # Hook customizado para gerenciamento de formulários
+├── pages/
+│   ├── Home/                # Página inicial com banner e carrosseis
+│   ├── cadastro/
+│   │   ├── Categoria/       # Cadastro de novas categorias
+│   │   └── Video/           # Cadastro de novos vídeos
+│   └── NotFound/            # Página 404
+├── repositories/            # Camada de acesso a dados (fetch API)
+├── types/                   # Interfaces TypeScript (Video, Categoria)
+└── main.tsx                 # Ponto de entrada + rotas
+```
 
-### `npm test`
+## ⚙️ Pré-requisitos
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [Node.js](https://nodejs.org/) >= 18
+- npm >= 9
 
-### `npm run build`
+## 🏁 Como Executar
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+# 1. Instalar dependências
+npm install
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+# 2. Iniciar o projeto (Vite + JSON Server em paralelo)
+npm run dev
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+A aplicação ficará disponível em **<http://localhost:3000>** e o JSON Server em **<http://localhost:3001>**.
 
-### `npm run eject`
+### Scripts Disponíveis
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+| Comando            | Descrição                                          |
+| ------------------ | -------------------------------------------------- |
+| `npm run dev`      | Inicia o Vite e o JSON Server simultaneamente      |
+| `npm run server`   | Inicia apenas o JSON Server (porta 3001)           |
+| `npm run build`    | Executa o TypeScript compiler e gera build de produção |
+| `npm run preview`  | Serve o build de produção localmente               |
+| `npm run lint`     | Executa o ESLint no projeto                        |
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🗺️ Rotas
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+| Rota                   | Página               |
+| ---------------------- | -------------------- |
+| `/`                    | Home                 |
+| `/cadastro/video`      | Cadastro de Vídeo    |
+| `/cadastro/categoria`  | Cadastro de Categoria|
+| `*`                    | 404 Not Found        |
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## 🏗️ Arquitetura
 
-## Learn More
+- **CSS Modules** — estilos com escopo local por componente, evitando conflitos de classes.
+- **Repository Pattern** — camada `repositories/` abstrai as chamadas à API REST do JSON Server.
+- **Custom Hooks** — `useForm` centraliza a lógica de formulários (estado, validação, reset).
+- **Path Alias** — `@/` é mapeado para `src/` via Vite, simplificando os imports.
+- **Proxy de API** — em dev, o Vite faz proxy de `/api` → `http://localhost:3001`, evitando CORS.
+- **CSS Variables** — design tokens centralizados em `:root` (`--primary`, `--frontEnd`, `--backEnd`, etc.).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🔧 Variáveis de Ambiente
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+| Variável          | Descrição               | Padrão                  |
+| ----------------- | ----------------------- | ----------------------- |
+| `VITE_API_URL`    | URL do backend          | `http://localhost:3001`  |
+| `PORT`            | Porta do JSON Server    | `3001`                  |
 
-### Code Splitting
+## 📝 Licença
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Este projeto é de uso pessoal e educacional.
